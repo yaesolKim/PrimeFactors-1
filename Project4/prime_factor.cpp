@@ -1,6 +1,10 @@
-#include "gmock/gmock.h"
+#include <vector>
 
-int main() {
-	::testing::InitGoogleMock();
-	return RUN_ALL_TESTS();
-}
+using std::vector;
+
+class PrimeFactors {
+public:
+	vector<int> of(int i) {
+		return {};
+	}
+};
