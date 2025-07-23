@@ -14,17 +14,13 @@ public:
 					num /= divisor;
 				}
 			}
-			else if (num == 6) {
+			else if (num == 6 || num == 9) {
 				for (divisor = 2; num > 1; divisor++) {
 					while (num % divisor == 0) {
 						result.push_back(divisor);
 						num /= divisor;
 					}
 				}
-			}
-			else if (num == 9) {
-				result.push_back(3);
-				result.push_back(3);
 			}
 			else {
 				result.push_back(num);
